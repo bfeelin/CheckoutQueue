@@ -5,7 +5,7 @@ import './App.css'
 import CheckoutQueue from './CheckoutQueue'
 
 function App() {
-  const data = [
+  const initialData = [
     [3, 2 ,6],
     [4, 6],
     [2, 9],
@@ -15,7 +15,7 @@ function App() {
 
   return (
     <>
-      <CheckoutQueue data={data} />
+      <CheckoutQueue initialData={initialData} />
     </>
   )
 }
