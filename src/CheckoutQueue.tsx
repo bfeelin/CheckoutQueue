@@ -7,12 +7,12 @@ export default function CheckoutQueue ({ initialData }: { initialData: Data }) {
     const [newShopper, setNewShopper] = useState<number|string>('')
 
     function handleCheckout(){
-        let shortestQueue:null|number = null
-        let shortestQueueLength:null|number = null
+        let shortestQueue:number = 0
+        let shortestQueueLength:number = Infinity
 
         data.forEach((queue, index) => {
             let thisQueueItems = queue.reduce((prev, curr) => prev + curr, 0)
-            if(!shortestQueue || !shortestQueueLength || thisQueueItems < shortestQueueLength){
+            if(thisQueueItems < shortestQueueLength){
                 shortestQueue = index
                 shortestQueueLength = thisQueueItems
             }
