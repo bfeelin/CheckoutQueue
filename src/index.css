@@ -67,3 +67,39 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.queues{
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+
+.quesues div{
+  margin-right: 15px;
+}
+
+.cashier{
+  border: 2px solid white;
+  width: 75px;
+  height: 75px;
+}
+
+.queue{
+  display: flex;
+  flex-direction: column;
+}
+
+.queue div{
+  margin-bottom: 5px;
+}
+
+.shopper{
+  border-radius: 50px;
+  border: 2px solid white;
+  width: 75px;
+  height: 75px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
