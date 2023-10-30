@@ -22,12 +22,12 @@ Remove the first shopper from the queue after their items are all gone.
 After removing a shopper, shift the remaining shoppers in the queue up to fill the vacant space.
 If all queues are filled, add the user to the queue with the least number of items again.
 
-React Implementation:
-6. Implement this feature in a React application for an interactive user experience.
+6. React Implementation:
+Implement this feature in a React application for an interactive user experience.
 Ensure real-time updates on the UI to reflect changes in the checkout queues and item removal.
 
-User Interaction:
-7. Provide feedback to the user through the UI, such as visual cues for the checkout process.
+7. User Interaction:
+Provide feedback to the user through the UI, such as visual cues for the checkout process.
 Allow users to input the number of items and initiate the process with the "Checkout" button.
 
 8. Edge Cases:
